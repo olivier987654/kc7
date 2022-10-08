@@ -147,4 +147,5 @@ def send_email_to_azure(email):
 
     LOG_UPLOADER.send_request(
         data=[email.stringify()],
+        log_type="email"
         table_name="Email")
